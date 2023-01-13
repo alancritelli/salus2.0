@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salus | Sua saude mental importa</title>
+
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--ICONES-->
+    <link rel="stylesheet" href="assets/Icons/icomoon/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/Icons/002-mental-health.png"
+      type="image/x-icon"
+    />
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--OWL-->
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
+  </head>
+
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a href="#home" class="logo">
+          <img
+            src="assets/img/Logo.png"
+            alt="logo da Salus"
+            title="Logo da Salus"
+          />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
+            <li><a onclick="closeMenu()" href="#aboutus">Sobre</a></li>
+            <li>
+              <a onclick="closeMenu()" href="#experts">Especialistas</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#contactus">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <i class="icon-menu"></i>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <i class="icon-x"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <header>
+          <h4>
+            Boas vindas a Salus
+            <img
+              src="assets/Icons/002-mental-health.png"
+              alt="coração representando emoção e razão"
+            />
+          </h4>
+          <p>
+            <span>&quot;</span> Desânimo nenhum pode ser maior que a vontade de
+            ser feliz e vencer!
+          </p>
+        </header>
+
+        <div class="content">
+          <img
+            src="assets/img/imgHome.png"
+            alt="Imagem simbolizando uma mente saudavel"
+            title="Imagem simbolizando uma mente saudavel"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus">
+      <div class="wrapper">
+        <header>
+          <h4>Sobre o projeto Salus...</h4>
+          <p>
+            O projeto foi criado para ajudar as pessoas que precisam de alguém
+            para desabafar.
+          </p>
+          <p>
+            Nosso diferencial é um botão de emergência, onde a pessoa que
+            precisar de apoio, consegue conversar com alguém, onde nisso ela vai
+            ter pessoas ao seu alcance para conversar
+          </p>
+        </header>
+
+        <div class="content">
+          <img src="assets/img/imgAboutus.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="experts">
+      <div class="wrapper">
+        <header>
+          <h4>Conheça nossos melhores Especialistas</h4>
+          <img src="assets/img/imgExperts.png" alt="" />
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <div class="profile">
+                <img
+                  src="assets/img/people01.png"
+                  alt="Imagem de perfil da Sarah Barbosa"
+                />
+                <h3>Sarah Barbosa</h3>
+                <p>Sorocaba, São Paulo</p>
+                <img
+                  src="assets/img/Assessmentsppl01.png"
+                  alt="Avaliações da Sarah"
+                />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+
+              <div class="more">
+                <a href="" class="button">Saiba Mais</a>
+
+                <div class="value">
+                  <img
+                    src="assets/Icons/001-support-services.png"
+                    alt="Icone simbolizando atendimento"
+                  />
+                  <p>R$100 / 50 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="profile">
+                <img
+                  src="assets/img/people02.png"
+                  alt="Foto do perfil do Miguel Teixeira"
+                />
+                <h3>Miguel Teixeira</h3>
+                <p>Votorantim, São Paulo</p>
+                <img
+                  src="assets/img/Assessmentsppl02.png"
+                  alt="Avaliações do Miguel"
+                />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+
+              <div class="more">
+                <a href="" class="button">Saiba Mais</a>
+
+                <div class="value">
+                  <img
+                    src="assets/Icons/001-support-services.png"
+                    alt="Icone simbolizando atendimento"
+                  />
+                  <p>R$90 / 40 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="profile">
+                <img
+                  src="assets/img/people03.png"
+                  alt="Imagem de perfil da Camila Martins"
+                />
+                <h3>Camila Martins</h3>
+                <p>Salto, São Paulo</p>
+                <img
+                  src="assets/img/Assessmentsppl03.png"
+                  alt="Avaliações da Camila"
+                />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+
+              <div class="more">
+                <a href="" class="button">Saiba Mais</a>
+
+                <div class="value">
+                  <img
+                    src="assets/Icons/001-support-services.png"
+                    alt="Icone simbolizando atendimento"
+                  />
+                  <p>R$110 / 60 minutos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="wrapper">
+        <header>
+          <h4>Vejam o que falam do nosso aplicativo</h4>
+          <p>
+            <span>&quot;</span>A Salus é um aplicativo que salva vidas, no meu
+            pior momento consegui alguém para me ajudar...
+          </p>
+        </header>
+
+        <div class="cards">
+          <div class="card">
+            <div class="profile">
+              <img
+                src="assets/img/people04.png"
+                alt="Imagem de perfil do Yago Rosa"
+              />
+              <h3>Yago da Rosa</h3>
+              <p>Usuário desde 2022</p>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="profile">
+              <img
+                src="assets/img/people05.png"
+                alt="Imagem de perfil da Sophia Monteiro"
+              />
+              <h3>Sophia Monteiro</h3>
+              <p>Usuário desde 2022</p>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="profile">
+              <img
+                src="assets/img/people06.png"
+                alt="Imagem de perfil da Maria Luiza Rodrigues"
+              />
+              <h3>Maria Luiza Rodrigues</h3>
+              <p>Usuário desde 2022</p>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              distinctio neque blanditiis, dolorem aperiam nulla explicabo
+              asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactus">
+      <div class="wrapper">
+        <header>
+          <h4>Nós podemos te ajudar, baixe nosso aplicativo e fale conosco!</h4>
+          <p>
+            <span>&quot;</span>
+            Nós não podemos tirar sua dor, mas podemos te ouvir, se quiser falar
+            sobre isso.
+          </p>
+        </header>
+
+        <div class="content">
+          <div class="download">
+            <div class="stores">
+              <h2>BAIXE NOSSO APLICATIVO</h2>
+              <div class="playstore">
+                <a href="">
+                  <img src="assets/img/playstore.png" alt="" />
+                </a>
+              </div>
+              <div class="appstore">
+                <a href="">
+                  <img src="assets/img/appstore.png" alt="" />
+                </a>
+              </div>
+              <div class="qrcode">
+                <img src="assets/img/qrcode.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="brand">
+          <div class="logo">
+            <a class="logo logo-alt" href="#home">
+              <img src="assets/img/LogoFooter.png" alt="" />
+            </a>
+          </div>
+          <div class="copyright">
+            <p>©2022 Salus.</p>
+            <p>Todos os direitos reservados.</p>
+          </div>
+
+          <div class="social">
+            <a href="https://instagram.com" target="_blank">
+              <i class="icon-instagram"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="icon-facebook"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="icon-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home"><i class="icon-chevrons-up"></i></a>
+
+    <script src="main.js"></script>
+   <!--  <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script> -->
+  </body>
+</html>

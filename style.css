@@ -400,11 +400,14 @@ footer {
     display: none;
   }
 
+  nav#navigation .logo img {
+    width: 50%;
+  }
+
   nav#navigation .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
   }
 
   nav#navigation .menu ul {
@@ -427,7 +430,7 @@ footer {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: #000;
 
     position: relative;
     bottom: -0.3rem;
@@ -454,4 +457,17 @@ footer {
   }
 
   /*======HOME======*/
+  #home .wrapper {
+    display: flex;
+    gap: 5rem;
+  }
+
+  #home header {
+    text-align: center;
+    margin-block: 5rem;
+  }
+
+  #home header h4 {
+    align-items: center;
+  }
 }

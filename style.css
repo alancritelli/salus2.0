@@ -61,7 +61,6 @@ footer {
   background-color: var(--background-color2);
 }
 
-section#home,
 section#experts,
 section#contactus,
 section#aboutus,
@@ -306,6 +305,13 @@ section#home {
 .stores {
   text-align: center;
   margin-top: 2rem;
+  width: 50%;
+
+  margin-inline: auto;
+}
+
+.stores h2 {
+  font-size: 1.6rem;
 }
 
 .qrcode {
@@ -355,4 +361,97 @@ footer {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  section header h4 {
+    font-size: 1.8rem;
+    line-height: 5.2rem;
+  }
+
+  /*======NAVBAR======*/
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu {
+    display: none;
+  }
+
+  nav#navigation .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  nav#navigation .menu ul {
+    display: flex;
+    gap: 3.2rem;
+    margin-left: 5rem;
+  }
+
+  nav#navigation .menu li a {
+    transition: opacity 0.4s;
+  }
+
+  nav#navigation .menu li a.active,
+  nav#navigation .menu li a:hover {
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  nav#navigation .menu li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+
+    position: relative;
+    bottom: -0.3rem;
+    left: -0.5rem;
+
+    display: block;
+
+    transition: width 0.2s;
+  }
+
+  nav#navigation.scroll .menu li a::after {
+    background-color: white;
+  }
+
+  nav#navigation .menu li a.active::after,
+  nav#navigation .menu li a:hover::after {
+    padding-inline: 0.8rem;
+    width: 100%;
+  }
+
+  nav#navigation.scroll .menu li a.active,
+  nav#navigation.scroll .menu li a:hover {
+    opacity: 1;
+  }
+
+  /*======HOME======*/
 }
